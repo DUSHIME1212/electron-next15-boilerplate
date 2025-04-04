@@ -1,0 +1,19 @@
+{
+    "extends": "../tsconfig.json",
+    "compilerOptions": {
+        "module": "ESNext",
+        "outDir": "./dist",
+        "noEmit": false,
+        "verbatimModuleSyntax": true,
+        "esModuleInterop": true,
+        "skipLibCheck": true,
+        "types": ["node", "electron"],
+        "target": "ESNext",
+        "baseUrl": ".",
+        "paths": {
+            "@/*": ["../src/*"]
+        }
+    },
+    "include": ["**/*.ts"],
+    "exclude": ["node_modules"]
+}

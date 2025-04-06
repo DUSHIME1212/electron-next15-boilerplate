@@ -39,11 +39,14 @@ async function createWindow() {
   mainWindow = new BrowserWindow({
     width: 1200,
     height: 800,
+    transparent: true,
+    frame: false,
     webPreferences: {
       nodeIntegration: false,
       contextIsolation: true,
       sandbox: true,
       preload: path.join(appPath, 'electron/preload.js'),
+      backgroundThrottling: false,
     },
   });
 

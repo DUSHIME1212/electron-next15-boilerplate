@@ -22,7 +22,7 @@ export default function RootLayout({
   children,
 }: Readonly<{ children: React.ReactNode }>) {
   return (
-    <html lang="en" className={`${geist.variable}`}>
+    <html lang="en" className={`bg-primary/20 backdrop-blur-3xl ${geist.variable}`}>
       <body>{children}</body>
     </html>
   );
